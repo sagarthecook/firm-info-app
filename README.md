@@ -1,8 +1,11 @@
+![create_Update_firm](https://github.com/user-attachments/assets/cd30ac8f-7003-4d1d-9eca-d6f40b70a7af)
+![Home](https://github.com/user-attachments/assets/abed2814-3907-416b-91a7-d0f36c76d812)
 # RegistrationApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
 
 ## Development server
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
