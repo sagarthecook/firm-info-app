@@ -1,0 +1,37 @@
+<div class="card-header">
+    <h2>Create/Update Firm</h2>
+   </div>
+   <br>
+   <div class="card-body">
+     <form class="form" [formGroup]='firmForm' id="firmForm">
+       <div class="row">
+         <div class="col-6">
+           <label>Firm Name</label>
+           <input formControlName='firmName'  id = "firmName" class="form-control" type="text"  placeholder="Enter Firm Name" />
+           <div class="alert alert-danger"
+           *ngIf="firmForm.get('firmName').hasError('required') && firmForm.get('firmName').touched">
+           Firm Name is required
+         </div>
+         </div>
+         
+         <div class="col-6">
+           <label>Firm Id</label>
+       <input formControlName='firmId' type="text" id = "firmId" class="form-control"  placeholder="Enter Firm Id" />
+       <div class="alert alert-danger"
+       *ngIf="firmForm.get('firmId').hasError('required') && firmForm.get('firmId').touched">
+       Firm Id is required
+     </div>
+         </div>
+       </div>  
+       <br>
+     </form>
+     <div class="card-footer">
+       <br>
+       <div class="row">
+         <div class="col-sm-10">
+         </div>
+         <div class="col-sm-2">
+           <button  class="btn btn-primary" (click)="submitData()">Submit</button>
+         </div>
+       </div>
+     </div>
